@@ -18,7 +18,7 @@ class ExampleExternalApp {
     this.knowledge = new KnowledgeAiMcpClient({
       apiUrl: process.env.API_URL || 'http://localhost:3000',
       apiKey: process.env.API_KEY || 'employee-external-secret123',
-      projectId: 'external', // Optional: override project from API key
+      // projectId: 'external', // Let client extract from API key
       webhook: {
         enabled: true,
         port: 3001 // Use specific port for this example

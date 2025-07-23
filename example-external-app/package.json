@@ -9,7 +9,8 @@
     "mcp": "node portable/standalone-server.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0"
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.0.0"
   },
   "keywords": ["example", "knowledge-ai", "mcp", "integration"],
   "author": "Knowledge AI Example",
