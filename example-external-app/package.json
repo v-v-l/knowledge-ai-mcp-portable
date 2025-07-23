@@ -1,0 +1,17 @@
+{
+  "name": "example-external-app",
+  "version": "1.0.0",
+  "description": "Example external application using Knowledge AI MCP portable layer",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "mcp": "node portable/standalone-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "keywords": ["example", "knowledge-ai", "mcp", "integration"],
+  "author": "Knowledge AI Example",
+  "license": "MIT"
+}

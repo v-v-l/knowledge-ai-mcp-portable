@@ -1,0 +1,21 @@
+{
+  "name": "knowledge-ai-mcp-portable",
+  "version": "1.0.0",
+  "description": "Portable MCP layer for Knowledge AI - copy this to any external app",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node standalone-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^17.2.0"
+  },
+  "keywords": [
+    "mcp",
+    "knowledge-ai",
+    "portable"
+  ],
+  "author": "Knowledge AI",
+  "license": "MIT"
+}
