@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "knowledge-ai": {
+      "command": "node",
+      "args": ["portable/standalone-server.js"],
+      "cwd": "/path/to/your/example-external-app",
+      "env": {
+        "API_URL": "http://localhost:3000",
+        "API_KEY": "your-api-key-here",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}

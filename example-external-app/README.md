@@ -55,13 +55,36 @@ npm run mcp
 - Connect from Claude Desktop or other MCP clients
 - Full access to all Knowledge AI tools
 
+#### Claude Desktop Configuration
+
+To use with Claude Desktop, add this to your Claude Desktop settings:
+
+```json
+{
+  "mcpServers": {
+    "knowledge-ai": {
+      "command": "node",
+      "args": ["portable/standalone-server.js"],
+      "cwd": "/path/to/your/example-external-app",
+      "env": {
+        "API_URL": "http://localhost:3000",
+        "API_KEY": "your-api-key-here",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}
+```
+
+See `claude-desktop-config.json` for a complete example.
+
 ## What Happens When You Run It
 
 The example app demonstrates:
 
 1. **🔗 Connection**: Connects to your Knowledge AI instance
 2. **📡 Webhook Setup**: Automatically registers for change notifications  
-3. **📝 Demo Content**: Creates example notes showing integration features
+3. **📝 Demo Content**: (Disabled for production - enable in code if needed)
 4. **🏷️ Auto-Tagging**: Automatically tags notes mentioning "external app"
 5. **🚨 Priority Flagging**: Marks urgent notes for special processing
 6. **📊 Periodic Sync**: Shows ongoing integration with statistics
@@ -85,9 +108,7 @@ The example app demonstrates:
 📡 Webhook receiver running at: http://localhost:3001/webhook
 📡 Webhook registered: http://localhost:3001/webhook
 🔗 Connected to Knowledge AI
-📋 Initializing example data...
-✅ Created welcome note (ID: 123)
-✅ Created processing demo note (ID: 124)
+📋 Initializing example data... (disabled for production)
 ✅ Example External App is running!
 
 📡 Webhook received: created for project external

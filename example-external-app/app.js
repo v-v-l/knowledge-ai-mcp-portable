@@ -47,8 +47,8 @@ class ExampleExternalApp {
       // Set up event listeners for database changes
       this.setupEventListeners();
       
-      // Initialize some example data
-      await this.initializeExampleData();
+      // Initialize some example data (disabled for production)
+      // await this.initializeExampleData();
       
       // Start periodic sync
       this.startPeriodicSync();
