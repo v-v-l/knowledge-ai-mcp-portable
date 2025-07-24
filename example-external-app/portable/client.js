@@ -148,6 +148,7 @@ class KnowledgeAiMcpClient extends EventEmitter {
     if (!this.webhookUrl) return;
     
     try {
+      console.log(`🔍 Registering webhook to: ${this.config.apiUrl}/api/webhooks`);
       await this.apiRequest('/api/webhooks', {
         method: 'POST',
         body: JSON.stringify({
@@ -175,6 +176,7 @@ class KnowledgeAiMcpClient extends EventEmitter {
     if (!this.webhookUrl) return;
     
     try {
+      console.log(`🔍 Unregistering webhook from: ${this.config.apiUrl}/api/webhooks`);
       await this.apiRequest('/api/webhooks', {
         method: 'DELETE',
         body: JSON.stringify({ url: this.webhookUrl })
